@@ -54,6 +54,19 @@ input[type="checkbox"] {
     0px 24px 0px -12px green;
 }
 
+.contactcard {
+  border: 1px solid black;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 10px auto;
+  background-color: white;
+}
+
+.contactcard img {
+  width: 100px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
