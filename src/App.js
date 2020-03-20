@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "./Header";
 import MainContent from "./MainContent";
 import Footer from "./Footer";
+import TodoList from "./TodoList";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
+      <TodoList />
     </div>
   );
 }

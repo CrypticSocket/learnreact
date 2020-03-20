@@ -20,6 +20,7 @@ function MainContent() {
       <h1>Content</h1>
       <p>Main content goes here</p>
       <p style={styleTime}>My color changes at different times of the day</p>
+      <p className="para">I'm styled by using class</p>
     </main>
   );
 }
