@@ -5,8 +5,19 @@ import "./App.css";
 import Header from "./Header";
 import MainContent from "./MainContent";
 import Footer from "./Footer";
-import TodoList from "./TodoList";
-import ContactCard from "./ContactCard";
+import TodoList from "./Exercise0/TodoList";
+import ContactCard from "./Exercise0/ContactCard";
+
+import Joke from "./Exercise0/Joke";
+import jokesData from "./Exercise0/jokesData";
+
+import Exercise1 from "./Exercise1/Exercise1";
+
+let jokesHere = jokesData.map(function(joke) {
+  return (
+    <Joke key={joke.id} question={joke.question} answer={joke.punchLine} />
+  );
+});
 
 function App() {
   return (
@@ -16,6 +27,7 @@ function App() {
       <Footer />
       <TodoList />
       <h1>Adding Contact Cards</h1>
+      {/* React Props */}
       <ContactCard
         contact={{
           name: "Mickey Mouse",
@@ -32,8 +44,21 @@ function App() {
           phNo: "912131231"
         }}
       />
+      <h1>Some Jokes</h1>
+      {jokesHere}
+      <Exercise1 />
     </div>
   );
 }
 
 export default App;
+
+// Things to check out
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findindex

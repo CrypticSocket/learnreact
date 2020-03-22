@@ -2,7 +2,7 @@ import React from "react";
 
 function MainContent() {
   // Inline Styles
-  const date = new Date(22, 3, 3, 19);
+  const date = new Date();
   const hours = date.getHours();
   let styleTime;
   if (hours < 12) {
