@@ -12,6 +12,7 @@ import Joke from "./Exercise0/Joke";
 import jokesData from "./Exercise0/jokesData";
 
 import Exercise1 from "./Exercise1/Exercise1";
+import Exercise2 from "./Exercise2/Exercise2";
 
 let jokesHere = jokesData.map(function(joke) {
   return (
@@ -46,7 +47,11 @@ function App() {
       />
       <h1>Some Jokes</h1>
       {jokesHere}
+
+      {/* Learning Cleaner React */}
       <Exercise1 />
+      <h1>Redone TodoList</h1>
+      <Exercise2 />
     </div>
   );
 }
