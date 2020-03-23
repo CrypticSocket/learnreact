@@ -1,6 +1,7 @@
 import React from "react";
 
 import Addition from "./Addition";
+import LoggedInOut from "./LoggedInOut"
 
 class State extends React.Component {
   constructor() {
@@ -16,6 +17,8 @@ class State extends React.Component {
         <h2 style={{ textAlign: "center" }}>This is {this.state.feeling}</h2>
         <h3>Practice</h3>
         <Addition />
+        <h3>Practice Again</h3>
+        <LoggedInOut />
       </div>
     );
   }
