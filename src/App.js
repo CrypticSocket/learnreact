@@ -13,6 +13,7 @@ import jokesData from "./Exercise0/jokesData";
 
 import Exercise1 from "./Exercise1/Exercise1";
 import Exercise2 from "./Exercise2/Exercise2";
+import State from "./Exercise3/State";
 
 let jokesHere = jokesData.map(function(joke) {
   return (
@@ -52,6 +53,8 @@ function App() {
       <Exercise1 />
       <h1>Redone TodoList</h1>
       <Exercise2 />
+      <h1>Learning State</h1>
+      <State />
     </div>
   );
 }
