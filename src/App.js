@@ -14,6 +14,7 @@ import jokesData from "./Exercise0/jokesData";
 import Exercise1 from "./Exercise1/Exercise1";
 import Exercise2 from "./Exercise2/Exercise2";
 import State from "./Exercise3/State";
+import StateTodoList from "./Exercise4/StateTodoList"
 
 let jokesHere = jokesData.map(function(joke) {
   return (
@@ -55,6 +56,8 @@ function App() {
       <Exercise2 />
       <h1>Learning State</h1>
       <State />
+      <h1>Todo List Using State</h1>
+      <StateTodoList />
     </div>
   );
 }
@@ -70,3 +73,4 @@ export default App;
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findindex
+// https://reactjs.org/docs/events.html#supported-events
